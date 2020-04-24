@@ -50,12 +50,12 @@ $EndComp
 $Comp
 L Amplifier_Operational:LM13700 U3
 U 4 1 5D9B9CB4
-P 7650 5550
-F 0 "U3" H 7550 5800 50  0000 C CNN
-F 1 "LM13700" H 7550 5400 50  0000 C CNN
-F 2 "2.Breadboard components:DIP-16_Socket" H 7350 5575 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/lm13700.pdf" H 7350 5575 50  0001 C CNN
-	4    7650 5550
+P 7750 5550
+F 0 "U3" H 7650 5800 50  0000 C CNN
+F 1 "LM13700" H 7650 5400 50  0000 C CNN
+F 2 "2.Breadboard components:DIP-16_Socket" H 7450 5575 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm13700.pdf" H 7450 5575 50  0001 C CNN
+	4    7750 5550
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -108,7 +108,7 @@ U 1 1 5D9DA212
 P 1100 5700
 F 0 "R1" H 1200 5700 50  0000 C CNN
 F 1 "1M" H 1200 5600 50  0000 C CNN
-F 2 "2.Breadboard components:R_Axial_Horizontal" V 1030 5700 50  0001 C CNN
+F 2 "2.Breadboard components:R_Axial_Vertical" V 1030 5700 50  0001 C CNN
 F 3 "~" H 1100 5700 50  0001 C CNN
 	1    1100 5700
 	1    0    0    -1  
@@ -183,10 +183,10 @@ Wire Wire Line
 Connection ~ 3300 4850
 Connection ~ 3300 5350
 $Comp
-L Switch:SW_SPST SW1
+L Switch:SW_SPST #SW1
 U 1 1 5D9ED6F3
 P 5700 4350
-F 0 "SW1" H 5700 4450 50  0000 C CNN
+F 0 "#SW1" H 5700 4450 50  0000 C CNN
 F 1 "SPST" H 5700 4150 50  0000 C CNN
 F 2 "1.Custom footprints:PinSocket_2x01_P2.54mm_Vertical_Wide" H 5700 4350 50  0001 C CNN
 F 3 "~" H 5700 4350 50  0001 C CNN
@@ -224,12 +224,12 @@ Connection ~ 7150 4950
 $Comp
 L Device:CP C11
 U 1 1 5DA3237B
-P 8100 5650
-F 0 "C11" V 7950 5650 50  0000 C CNN
-F 1 "10u" V 8250 5650 50  0000 C CNN
-F 2 "2.Breadboard components:CP_Vertical" H 8138 5500 50  0001 C CNN
-F 3 "~" H 8100 5650 50  0001 C CNN
-	1    8100 5650
+P 8200 5650
+F 0 "C11" V 8050 5650 50  0000 C CNN
+F 1 "10u" V 8350 5650 50  0000 C CNN
+F 2 "2.Breadboard components:CP_Vertical" H 8238 5500 50  0001 C CNN
+F 3 "~" H 8200 5650 50  0001 C CNN
+	1    8200 5650
 	0    -1   1    0   
 $EndComp
 Wire Wire Line
@@ -247,44 +247,40 @@ Wire Wire Line
 $Comp
 L Device:D D4
 U 1 1 5DB205E7
-P 3250 3300
-F 0 "D4" V 3200 3350 50  0000 L CNN
-F 1 "1N4148" V 3300 3350 50  0000 L CNN
-F 2 "2.Breadboard components:D_Axial_Vertical" H 3250 3300 50  0001 C CNN
-F 3 "~" H 3250 3300 50  0001 C CNN
-	1    3250 3300
+P 3200 3300
+F 0 "D4" V 3150 3350 50  0000 L CNN
+F 1 "1N4148" V 3250 3350 50  0000 L CNN
+F 2 "2.Breadboard components:D_Axial_Vertical" H 3200 3300 50  0001 C CNN
+F 3 "~" H 3200 3300 50  0001 C CNN
+	1    3200 3300
 	0    1    1    0   
 $EndComp
 $Comp
 L Device:D D5
 U 1 1 5DB2122C
-P 3500 3550
-F 0 "D5" H 3500 3650 50  0000 C CNN
-F 1 "1N4148" H 3500 3450 50  0000 C CNN
-F 2 "2.Breadboard components:D_Axial_Vertical" H 3500 3550 50  0001 C CNN
-F 3 "~" H 3500 3550 50  0001 C CNN
-	1    3500 3550
+P 3450 3550
+F 0 "D5" H 3450 3650 50  0000 C CNN
+F 1 "1N4148" H 3450 3450 50  0000 C CNN
+F 2 "2.Breadboard components:D_Axial_Horizontal" H 3450 3550 50  0001 C CNN
+F 3 "~" H 3450 3550 50  0001 C CNN
+	1    3450 3550
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3250 3450 3250 3550
+	3200 3450 3200 3550
 Wire Wire Line
-	3250 3550 3150 3550
+	3200 3550 3100 3550
 Wire Wire Line
-	3250 3550 3350 3550
-Connection ~ 3250 3550
+	3200 3550 3300 3550
+Connection ~ 3200 3550
 Wire Wire Line
-	3250 3150 3250 3050
+	3200 3150 3200 3050
 Wire Wire Line
-	3250 3050 2450 3050
+	3200 3050 2400 3050
 Wire Wire Line
-	2450 3050 2450 3450
+	2400 3050 2400 3450
 Wire Wire Line
-	2450 3450 2550 3450
-Wire Wire Line
-	3650 3550 3750 3550
-Wire Wire Line
-	4050 3550 4150 3550
+	2400 3450 2500 3450
 Wire Wire Line
 	4450 3550 4550 3550
 Wire Wire Line
@@ -382,8 +378,6 @@ Wire Wire Line
 	6000 4850 6350 4850
 Wire Wire Line
 	2250 3400 2250 3500
-Wire Wire Line
-	2400 3650 2550 3650
 Wire Wire Line
 	5900 4350 6000 4350
 Wire Wire Line
@@ -624,23 +618,23 @@ $EndComp
 $Comp
 L Device:R R6
 U 1 1 5DDDAAA4
-P 3900 3550
-F 0 "R6" V 4000 3550 50  0000 C CNN
-F 1 "100R" V 3800 3550 50  0000 C CNN
-F 2 "2.Breadboard components:R_Axial_Horizontal" V 3830 3550 50  0001 C CNN
-F 3 "~" H 3900 3550 50  0001 C CNN
-	1    3900 3550
+P 3800 3550
+F 0 "R6" V 3900 3550 50  0000 C CNN
+F 1 "100R" V 3700 3550 50  0000 C CNN
+F 2 "2.Breadboard components:R_Axial_Horizontal" V 3730 3550 50  0001 C CNN
+F 3 "~" H 3800 3550 50  0001 C CNN
+	1    3800 3550
 	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:R R5
 U 1 1 5DDDB3F5
-P 3500 3050
-F 0 "R5" V 3600 3050 50  0000 C CNN
-F 1 "100k" V 3400 3050 50  0000 C CNN
-F 2 "2.Breadboard components:R_Axial_Horizontal" V 3430 3050 50  0001 C CNN
-F 3 "~" H 3500 3050 50  0001 C CNN
-	1    3500 3050
+P 3450 3050
+F 0 "R5" V 3550 3050 50  0000 C CNN
+F 1 "100k" V 3350 3050 50  0000 C CNN
+F 2 "2.Breadboard components:R_Axial_Horizontal" V 3380 3050 50  0001 C CNN
+F 3 "~" H 3450 3050 50  0001 C CNN
+	1    3450 3050
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -772,7 +766,7 @@ U 1 1 5DE0B88A
 P 6000 4600
 F 0 "R12" H 5950 4550 50  0000 R CNN
 F 1 "10k" H 5950 4650 50  0000 R CNN
-F 2 "2.Breadboard components:R_Axial_Horizontal" V 5930 4600 50  0001 C CNN
+F 2 "2.Breadboard components:R_Axial_Vertical" V 5930 4600 50  0001 C CNN
 F 3 "~" H 6000 4600 50  0001 C CNN
 	1    6000 4600
 	-1   0    0    1   
@@ -805,7 +799,7 @@ U 1 1 5DE0F79E
 P 1350 5450
 F 0 "R2" V 1450 5500 50  0000 R CNN
 F 1 "1k" V 1250 5500 50  0000 R CNN
-F 2 "2.Breadboard components:R_Axial_Horizontal" V 1280 5450 50  0001 C CNN
+F 2 "2.Breadboard components:R_Axial_Vertical" V 1280 5450 50  0001 C CNN
 F 3 "~" H 1350 5450 50  0001 C CNN
 	1    1350 5450
 	0    -1   -1   0   
@@ -857,12 +851,12 @@ $EndComp
 $Comp
 L Amplifier_Operational:TL072 U1
 U 2 1 5E1D593F
-P 2850 3550
-F 0 "U1" H 2850 3183 50  0000 C CNN
-F 1 "TL072" H 2850 3274 50  0000 C CNN
-F 2 "2.Breadboard components:DIP-8_Socket" H 2850 3550 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 2850 3550 50  0001 C CNN
-	2    2850 3550
+P 2800 3550
+F 0 "U1" H 2800 3183 50  0000 C CNN
+F 1 "TL072" H 2800 3274 50  0000 C CNN
+F 2 "2.Breadboard components:DIP-8_Socket" H 2800 3550 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 2800 3550 50  0001 C CNN
+	2    2800 3550
 	1    0    0    1   
 $EndComp
 $Comp
@@ -940,97 +934,95 @@ $EndComp
 $Comp
 L Device:R R7
 U 1 1 5E2375AB
-P 4100 5050
-F 0 "R7" V 4000 5050 50  0000 C CNN
-F 1 "4k7" V 4100 5050 50  0000 C CNN
-F 2 "2.Breadboard components:R_Axial_Horizontal" V 4030 5050 50  0001 C CNN
-F 3 "~" H 4100 5050 50  0001 C CNN
-	1    4100 5050
+P 3950 4950
+F 0 "R7" V 3850 4950 50  0000 C CNN
+F 1 "4k7" V 3950 4950 50  0000 C CNN
+F 2 "2.Breadboard components:R_Axial_Horizontal" V 3880 4950 50  0001 C CNN
+F 3 "~" H 3950 4950 50  0001 C CNN
+	1    3950 4950
 	0    -1   -1   0   
 $EndComp
 Connection ~ 5000 4850
 Wire Wire Line
 	5000 4850 6000 4850
 Wire Wire Line
-	5400 4350 5500 4350
+	5400 4350 5450 4350
 $Comp
 L Device:R R19
 U 1 1 5E287EEA
-P 7850 5900
-F 0 "R19" H 7750 5900 50  0000 C CNN
-F 1 "4k7" H 7750 6000 50  0000 C CNN
-F 2 "2.Breadboard components:R_Axial_Horizontal" V 7780 5900 50  0001 C CNN
-F 3 "~" H 7850 5900 50  0001 C CNN
-	1    7850 5900
+P 7950 5900
+F 0 "R19" H 7850 5900 50  0000 C CNN
+F 1 "4k7" H 7850 6000 50  0000 C CNN
+F 2 "2.Breadboard components:R_Axial_Horizontal" V 7880 5900 50  0001 C CNN
+F 3 "~" H 7950 5900 50  0001 C CNN
+	1    7950 5900
 	-1   0    0    1   
 $EndComp
 $Comp
 L Device:R R20
 U 1 1 5E288D10
-P 8350 5900
-F 0 "R20" H 8300 5850 50  0000 R CNN
-F 1 "100k" H 8300 5950 50  0000 R CNN
-F 2 "2.Breadboard components:R_Axial_Horizontal" V 8280 5900 50  0001 C CNN
-F 3 "~" H 8350 5900 50  0001 C CNN
-	1    8350 5900
+P 8450 5900
+F 0 "R20" H 8400 5850 50  0000 R CNN
+F 1 "100k" H 8400 5950 50  0000 R CNN
+F 2 "2.Breadboard components:R_Axial_Horizontal" V 8380 5900 50  0001 C CNN
+F 3 "~" H 8450 5900 50  0001 C CNN
+	1    8450 5900
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
 	5050 2950 6250 2950
 Wire Wire Line
 	5750 3450 5950 3450
-Wire Wire Line
-	7350 5550 7300 5550
 $Comp
 L power:GND #PWR025
 U 1 1 5E29C5DE
-P 7850 6100
-F 0 "#PWR025" H 7850 5850 50  0001 C CNN
-F 1 "GND" H 7855 5927 50  0000 C CNN
-F 2 "" H 7850 6100 50  0001 C CNN
-F 3 "" H 7850 6100 50  0001 C CNN
-	1    7850 6100
+P 7950 6100
+F 0 "#PWR025" H 7950 5850 50  0001 C CNN
+F 1 "GND" H 7955 5927 50  0000 C CNN
+F 2 "" H 7950 6100 50  0001 C CNN
+F 3 "" H 7950 6100 50  0001 C CNN
+	1    7950 6100
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR026
 U 1 1 5E29D69F
-P 8350 6100
-F 0 "#PWR026" H 8350 5850 50  0001 C CNN
-F 1 "GND" H 8355 5927 50  0000 C CNN
-F 2 "" H 8350 6100 50  0001 C CNN
-F 3 "" H 8350 6100 50  0001 C CNN
-	1    8350 6100
+P 8450 6100
+F 0 "#PWR026" H 8450 5850 50  0001 C CNN
+F 1 "GND" H 8455 5927 50  0000 C CNN
+F 2 "" H 8450 6100 50  0001 C CNN
+F 3 "" H 8450 6100 50  0001 C CNN
+	1    8450 6100
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8350 6100 8350 6050
+	8450 6100 8450 6050
 Wire Wire Line
-	7850 6100 7850 6050
-Wire Wire Line
-	7750 5650 7850 5650
-Wire Wire Line
-	7850 5650 7850 5750
-Connection ~ 7850 5650
+	7950 6100 7950 6050
 Wire Wire Line
 	7850 5650 7950 5650
 Wire Wire Line
-	8350 5650 8350 5750
+	7950 5650 7950 5750
+Connection ~ 7950 5650
 Wire Wire Line
-	8250 5650 8350 5650
-Connection ~ 8350 5650
+	7950 5650 8050 5650
+Wire Wire Line
+	8450 5650 8450 5750
 Wire Wire Line
 	8350 5650 8450 5650
+Connection ~ 8450 5650
+Wire Wire Line
+	8450 5650 8550 5650
 $Comp
 L Connector:Conn_01x01_Female J6
 U 1 1 5E2C8D90
-P 8650 5650
-F 0 "J6" H 8650 5900 50  0000 C CNN
-F 1 "Conn_01x01" H 8650 5800 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x01_P2.54mm_Vertical" H 8650 5650 50  0001 C CNN
-F 3 "~" H 8650 5650 50  0001 C CNN
-F 4 "Out" H 8650 5700 50  0000 C CNN "Field4"
-	1    8650 5650
+P 8750 5650
+F 0 "J6" H 8750 5900 50  0000 C CNN
+F 1 "Conn_01x01" H 8750 5800 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x01_P2.54mm_Vertical" H 8750 5650 50  0001 C CNN
+F 3 "~" H 8750 5650 50  0001 C CNN
+F 4 "Out" H 8750 5700 50  0000 C CNN "Field4"
+	1    8750 5650
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -1044,42 +1036,17 @@ Connection ~ 1750 5450
 Wire Wire Line
 	1750 5450 1850 5450
 $Comp
-L Device:R_POT RV2
+L Device:R_POT #RV2
 U 1 1 5E659623
-P 3700 5050
-F 0 "RV2" H 3631 5004 50  0000 R CNN
-F 1 "1Meg_log" H 3650 5200 50  0000 R CNN
-F 2 "1.Custom footprints:Alpha_16mm_potentiometer" H 3700 5050 50  0001 C CNN
-F 3 "~" H 3700 5050 50  0001 C CNN
-F 4 "Ratio" H 3650 5100 50  0000 R CNN "Field4"
-	1    3700 5050
-	1    0    0    1   
+P 3700 5100
+F 0 "#RV2" H 3631 5054 50  0000 R CNN
+F 1 "1Meg_log" H 3650 5250 50  0000 R CNN
+F 2 "1.Custom footprints:Alpha_16mm_potentiometer" H 3700 5100 50  0001 C CNN
+F 3 "~" H 3700 5100 50  0001 C CNN
+F 4 "Ratio" H 3650 5150 50  0000 R CNN "Field4"
+	1    3700 5100
+	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3300 4850 3700 4850
-Wire Wire Line
-	3300 5350 4300 5350
-Wire Wire Line
-	3700 4900 3700 4850
-Connection ~ 3700 4850
-Wire Wire Line
-	3700 4850 5000 4850
-Wire Wire Line
-	3850 5050 3900 5050
-Wire Wire Line
-	3700 5200 3900 5200
-Wire Wire Line
-	3900 5200 3900 5050
-Connection ~ 3900 5050
-Wire Wire Line
-	3900 5050 3950 5050
-Wire Wire Line
-	4250 5050 4300 5050
-Wire Wire Line
-	4300 5050 4300 5350
-Connection ~ 4300 5350
-Wire Wire Line
-	4300 5350 7150 5350
 $Comp
 L power:+4V5 #PWR019
 U 1 1 5E67EE01
@@ -1127,12 +1094,12 @@ $EndComp
 $Comp
 L power:+4V5 #PWR023
 U 1 1 5E681DA5
-P 6700 5700
-F 0 "#PWR023" H 6700 5550 50  0001 C CNN
-F 1 "+4V5" H 6715 5873 50  0000 C CNN
-F 2 "" H 6700 5700 50  0001 C CNN
-F 3 "" H 6700 5700 50  0001 C CNN
-	1    6700 5700
+P 6700 5750
+F 0 "#PWR023" H 6700 5600 50  0001 C CNN
+F 1 "+4V5" H 6715 5923 50  0000 C CNN
+F 2 "" H 6700 5750 50  0001 C CNN
+F 3 "" H 6700 5750 50  0001 C CNN
+	1    6700 5750
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1147,10 +1114,10 @@ F 3 "" H 2250 3000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_POT RV5
+L Device:R_POT #RV5
 U 1 1 5E6850E9
 P 7150 5550
-F 0 "RV5" H 7100 5500 50  0000 R CNN
+F 0 "#RV5" H 7100 5500 50  0000 R CNN
 F 1 "10k_log" H 7100 5700 50  0000 R CNN
 F 2 "1.Custom footprints:Alpha_16mm_potentiometer" H 7150 5550 50  0001 C CNN
 F 3 "~" H 7150 5550 50  0001 C CNN
@@ -1165,51 +1132,46 @@ Wire Wire Line
 	7150 5400 7150 5350
 Connection ~ 7150 5350
 Wire Wire Line
-	6700 5700 6700 5750
+	6700 5750 6700 5800
 Wire Wire Line
-	6700 5750 7150 5750
-Wire Wire Line
-	7150 5750 7150 5700
+	6700 5800 7150 5800
 $Comp
-L Device:R_POT RV4
+L Device:R_POT #RV4
 U 1 1 5E6C96FE
 P 4300 3550
-F 0 "RV4" V 4400 3650 50  0000 C CNN
+F 0 "#RV4" V 4400 3650 50  0000 C CNN
 F 1 "100k_log" V 4100 3550 50  0000 C CNN
 F 2 "1.Custom footprints:Alpha_16mm_potentiometer" H 4300 3550 50  0001 C CNN
 F 3 "~" H 4300 3550 50  0001 C CNN
 F 4 "Attack" V 4200 3550 50  0000 C CNN "Field4"
 	1    4300 3550
-	0    1    -1   0   
+	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R_POT RV3
+L Device:R_POT #RV3
 U 1 1 5E6CA0A0
-P 3900 3050
-F 0 "RV3" V 4000 3150 50  0000 C CNN
-F 1 "1Meg_lin" V 3700 3050 50  0000 C CNN
-F 2 "1.Custom footprints:Alpha_16mm_potentiometer" H 3900 3050 50  0001 C CNN
-F 3 "~" H 3900 3050 50  0001 C CNN
-F 4 "Release" V 3800 3050 50  0000 C CNN "Field4"
-	1    3900 3050
-	0    1    -1   0   
+P 4350 3050
+F 0 "#RV3" V 4450 3150 50  0000 C CNN
+F 1 "1Meg_lin" V 4150 3050 50  0000 C CNN
+F 2 "1.Custom footprints:Alpha_16mm_potentiometer" H 4350 3050 50  0001 C CNN
+F 3 "~" H 4350 3050 50  0001 C CNN
+F 4 "Release" V 4250 3050 50  0000 C CNN "Field4"
+	1    4350 3050
+	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	3350 3050 3250 3050
-Connection ~ 3250 3050
+	3300 3050 3200 3050
+Connection ~ 3200 3050
 Wire Wire Line
-	3750 3050 3650 3050
+	3700 3050 3600 3050
 Wire Wire Line
-	4050 3050 4100 3050
+	4500 3050 4550 3050
 Wire Wire Line
-	3900 2900 3900 2850
+	4350 2900 4350 2850
 Wire Wire Line
-	3900 2850 4100 2850
+	4350 2850 4550 2850
 Wire Wire Line
-	4100 2850 4100 3050
-Connection ~ 4100 3050
-Wire Wire Line
-	4100 3050 4550 3050
+	4550 2850 4550 3050
 Wire Wire Line
 	4550 3050 4550 3350
 Wire Wire Line
@@ -1238,33 +1200,6 @@ Wire Wire Line
 	4600 3550 4550 3550
 Wire Wire Line
 	4900 3550 5050 3550
-$Comp
-L power:GND #PWR01
-U 1 1 5E692C72
-P 1050 6250
-F 0 "#PWR01" H 1050 6000 50  0001 C CNN
-F 1 "GND" H 1055 6077 50  0000 C CNN
-F 2 "" H 1050 6250 50  0001 C CNN
-F 3 "" H 1050 6250 50  0001 C CNN
-	1    1050 6250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1000 6200 1050 6200
-Wire Wire Line
-	1050 6200 1050 6250
-$Comp
-L Connector:Conn_01x01_Female J2
-U 1 1 5E692C7A
-P 800 6200
-F 0 "J2" H 800 6050 50  0000 R CNN
-F 1 "Conn_01x01" H 800 6150 50  0000 R CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x01_P2.54mm_Vertical" H 800 6200 50  0001 C CNN
-F 3 "~" H 800 6200 50  0001 C CNN
-F 4 "GND" H 800 6250 50  0000 R CNN "Field4"
-	1    800  6200
-	-1   0    0    1   
-$EndComp
 $Comp
 L Device:C C3
 U 1 1 5E714F51
@@ -1436,4 +1371,163 @@ F 3 "~" H 1650 950 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1650 950  1650 1050
+Connection ~ 4550 3050
+$Comp
+L Connector:Conn_01x01_Female J5
+U 1 1 5EA6EB23
+P 3700 2750
+F 0 "J5" V 3800 2700 50  0000 R CNN
+F 1 "Conn_01x01" V 3700 2700 50  0000 R CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x01_P2.54mm_Vertical" H 3700 2750 50  0001 C CNN
+F 3 "~" H 3700 2750 50  0001 C CNN
+F 4 "REL_1" V 3600 2700 50  0000 R CNN "Field4"
+	1    3700 2750
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3700 2950 3700 3050
+Connection ~ 3700 3050
+Wire Wire Line
+	2500 3650 2400 3650
+Wire Wire Line
+	3600 3550 3650 3550
+$Comp
+L Connector:Conn_01x01_Female J7
+U 1 1 5EABB41C
+P 4050 3250
+F 0 "J7" V 4150 3300 50  0000 L CNN
+F 1 "Conn_01x01" V 4050 3300 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x01_P2.54mm_Vertical" H 4050 3250 50  0001 C CNN
+F 3 "~" H 4050 3250 50  0001 C CNN
+F 4 "ATT_1" V 3950 3300 50  0000 L CNN "Field4"
+	1    4050 3250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4050 3450 4050 3550
+Wire Wire Line
+	4050 3550 3950 3550
+Wire Wire Line
+	4050 3550 4150 3550
+Connection ~ 4050 3550
+Wire Wire Line
+	3700 3050 4200 3050
+$Comp
+L Connector:Conn_01x01_Female J8
+U 1 1 5EAF52F4
+P 4550 2600
+F 0 "J8" V 4650 2550 50  0000 R CNN
+F 1 "Conn_01x01" V 4550 2550 50  0000 R CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x01_P2.54mm_Vertical" H 4550 2600 50  0001 C CNN
+F 3 "~" H 4550 2600 50  0001 C CNN
+F 4 "REL_23_&_ATT_23" V 4450 2550 50  0000 R CNN "Field4"
+	1    4550 2600
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4550 2800 4550 2850
+Connection ~ 4550 2850
+$Comp
+L Connector:Conn_01x01_Female J9
+U 1 1 5EB07718
+P 3750 4750
+F 0 "J9" V 3850 4700 50  0000 R CNN
+F 1 "Conn_01x01" V 3750 4700 50  0000 R CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x01_P2.54mm_Vertical" H 3750 4750 50  0001 C CNN
+F 3 "~" H 3750 4750 50  0001 C CNN
+F 4 "RAT_1" V 3650 4700 50  0000 R CNN "Field4"
+	1    3750 4750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:Conn_01x01_Female J10
+U 1 1 5EB08397
+P 3700 5600
+F 0 "J10" V 3750 5600 50  0000 C CNN
+F 1 "Conn_01x01" V 3850 5600 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x01_P2.54mm_Vertical" H 3700 5600 50  0001 C CNN
+F 3 "~" H 3700 5600 50  0001 C CNN
+F 4 "RAT_23_&_VOL_3" V 3950 5600 50  0000 C CNN "Field4"
+	1    3700 5600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3300 5350 3700 5350
+Wire Wire Line
+	3800 4950 3750 4950
+Wire Wire Line
+	4100 4950 4100 4850
+Connection ~ 4100 4850
+Wire Wire Line
+	4100 4850 5000 4850
+Wire Wire Line
+	3700 5250 3850 5250
+Wire Wire Line
+	3850 5250 3850 5100
+Wire Wire Line
+	3700 5250 3700 5350
+Connection ~ 3700 5250
+Connection ~ 3700 5350
+Wire Wire Line
+	3700 5350 7150 5350
+Wire Wire Line
+	3300 4850 4100 4850
+Wire Wire Line
+	3700 5400 3700 5350
+Wire Wire Line
+	7300 5550 7400 5550
+Wire Wire Line
+	7150 5700 7150 5800
+$Comp
+L Connector:Conn_01x01_Female J2
+U 1 1 5EC0BB6B
+P 7150 6050
+F 0 "J2" V 7200 6050 50  0000 C CNN
+F 1 "Conn_01x01" V 7300 6050 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x01_P2.54mm_Vertical" H 7150 6050 50  0001 C CNN
+F 3 "~" H 7150 6050 50  0001 C CNN
+F 4 "VOL_1_&_TR_SW_2" V 7400 6050 50  0000 C CNN "Field4"
+	1    7150 6050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7150 5850 7150 5800
+Connection ~ 7150 5800
+$Comp
+L Connector:Conn_01x01_Female J11
+U 1 1 5EC16D28
+P 7400 5800
+F 0 "J11" V 7450 5800 50  0000 C CNN
+F 1 "Conn_01x01" V 7550 5800 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x01_P2.54mm_Vertical" H 7400 5800 50  0001 C CNN
+F 3 "~" H 7400 5800 50  0001 C CNN
+F 4 "VOL_2" V 7650 5800 50  0000 C CNN "Field4"
+	1    7400 5800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7400 5600 7400 5550
+Connection ~ 7400 5550
+Wire Wire Line
+	7400 5550 7450 5550
+Connection ~ 3750 4950
+Wire Wire Line
+	3750 4950 3700 4950
+$Comp
+L Connector:Conn_01x01_Female J12
+U 1 1 5EB94D63
+P 5450 4100
+F 0 "J12" V 5550 4050 50  0000 R CNN
+F 1 "Conn_01x01" V 5450 4050 50  0000 R CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x01_P2.54mm_Vertical" H 5450 4100 50  0001 C CNN
+F 3 "~" H 5450 4100 50  0001 C CNN
+F 4 "TRB_SW_1" V 5350 4050 50  0000 R CNN "Field4"
+	1    5450 4100
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5450 4300 5450 4350
+Connection ~ 5450 4350
+Wire Wire Line
+	5450 4350 5500 4350
 $EndSCHEMATC
