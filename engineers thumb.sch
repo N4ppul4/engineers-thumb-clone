@@ -108,7 +108,7 @@ U 1 1 5D9DA212
 P 1100 5700
 F 0 "R1" H 1200 5700 50  0000 C CNN
 F 1 "1M" H 1200 5600 50  0000 C CNN
-F 2 "2.Breadboard components:R_Axial_Vertical" V 1030 5700 50  0001 C CNN
+F 2 "2.Breadboard components:R_Axial_Horizontal" V 1030 5700 50  0001 C CNN
 F 3 "~" H 1100 5700 50  0001 C CNN
 	1    1100 5700
 	1    0    0    -1  
@@ -799,7 +799,7 @@ U 1 1 5DE0F79E
 P 1350 5450
 F 0 "R2" V 1450 5500 50  0000 R CNN
 F 1 "1k" V 1250 5500 50  0000 R CNN
-F 2 "2.Breadboard components:R_Axial_Vertical" V 1280 5450 50  0001 C CNN
+F 2 "2.Breadboard components:R_Axial_Horizontal" V 1280 5450 50  0001 C CNN
 F 3 "~" H 1350 5450 50  0001 C CNN
 	1    1350 5450
 	0    -1   -1   0   
@@ -810,7 +810,7 @@ U 1 1 5DE10D39
 P 5100 1250
 F 0 "R8" H 5050 1200 50  0000 R CNN
 F 1 "100k" H 5050 1300 50  0000 R CNN
-F 2 "2.Breadboard components:R_Axial_Vertical" V 5030 1250 50  0001 C CNN
+F 2 "2.Breadboard components:R_Axial_Horizontal" V 5030 1250 50  0001 C CNN
 F 3 "~" H 5100 1250 50  0001 C CNN
 	1    5100 1250
 	-1   0    0    1   
