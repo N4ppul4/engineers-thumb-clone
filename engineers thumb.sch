@@ -183,10 +183,10 @@ Wire Wire Line
 Connection ~ 3300 4850
 Connection ~ 3300 5350
 $Comp
-L Switch:SW_SPST #SW1
+L Switch:SW_SPST SW1
 U 1 1 5D9ED6F3
 P 5700 4350
-F 0 "#SW1" H 5700 4450 50  0000 C CNN
+F 0 "SW1" H 5700 4450 50  0000 C CNN
 F 1 "SPST" H 5700 4150 50  0000 C CNN
 F 2 "1.Custom footprints:PinSocket_2x01_P2.54mm_Vertical_Wide" H 5700 4350 50  0001 C CNN
 F 3 "~" H 5700 4350 50  0001 C CNN
@@ -377,8 +377,6 @@ Connection ~ 6000 4850
 Wire Wire Line
 	6000 4850 6350 4850
 Wire Wire Line
-	2250 3400 2250 3450
-Wire Wire Line
 	5900 4350 6000 4350
 Wire Wire Line
 	6000 4350 6000 4450
@@ -479,17 +477,6 @@ F 3 "" H 2150 1850 50  0001 C CNN
 	1    2150 1850
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:GND #PWR03
-U 1 1 5DB79A0C
-P 1150 1850
-F 0 "#PWR03" H 1150 1600 50  0001 C CNN
-F 1 "GND" H 1155 1677 50  0000 C CNN
-F 2 "" H 1150 1850 50  0001 C CNN
-F 3 "" H 1150 1850 50  0001 C CNN
-	1    1150 1850
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5100 1050 5100 1000
 Wire Wire Line
@@ -533,20 +520,6 @@ Wire Wire Line
 	6700 1200 6650 1200
 Wire Wire Line
 	6650 1200 6650 1350
-Wire Wire Line
-	1100 1800 1150 1800
-$Comp
-L Connector:Conn_01x01_Female J1
-U 1 1 5DD689AB
-P 800 5450
-F 0 "J1" H 800 5150 50  0000 R CNN
-F 1 "Conn_01x01" H 800 5250 50  0000 R CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x01_P2.54mm_Vertical" H 800 5450 50  0001 C CNN
-F 3 "~" H 800 5450 50  0001 C CNN
-F 4 "Input" H 800 5350 50  0000 R CNN "Field4"
-	1    800  5450
-	-1   0    0    1   
-$EndComp
 $Comp
 L Device:Q_PMOS_GSD Q1
 U 1 1 5DD8BF84
@@ -683,30 +656,6 @@ F 2 "2.Breadboard components:C_Box_P5.08mm" H 5288 4200 50  0001 C CNN
 F 3 "~" H 5250 4350 50  0001 C CNN
 	1    5250 4350
 	0    1    1    0   
-$EndComp
-$Comp
-L Connector:Conn_01x01_Female J4
-U 1 1 5DE018CC
-P 900 1800
-F 0 "J4" H 900 1500 50  0000 R CNN
-F 1 "Conn_01x01" H 900 1700 50  0000 R CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x01_P2.54mm_Vertical" H 900 1800 50  0001 C CNN
-F 3 "~" H 900 1800 50  0001 C CNN
-F 4 "GND" H 900 1600 50  0000 R CNN "Field4"
-	1    900  1800
-	-1   0    0    1   
-$EndComp
-$Comp
-L Connector:Conn_01x01_Female J3
-U 1 1 5DE02803
-P 900 1050
-F 0 "J3" H 1000 900 50  0000 R CNN
-F 1 "Conn_01x01" H 1000 1000 50  0000 R CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x01_P2.54mm_Vertical" H 900 1050 50  0001 C CNN
-F 3 "~" H 900 1050 50  0001 C CNN
-F 4 "9V" H 1000 1100 50  0000 R CNN "Field4"
-	1    900  1050
-	-1   0    0    1   
 $EndComp
 $Comp
 L Device:R R4
@@ -937,8 +886,6 @@ $EndComp
 Connection ~ 5000 4850
 Wire Wire Line
 	5000 4850 6000 4850
-Wire Wire Line
-	5400 4350 5450 4350
 $Comp
 L Device:R R19
 U 1 1 5E287EEA
@@ -1005,18 +952,6 @@ Wire Wire Line
 Connection ~ 8450 5650
 Wire Wire Line
 	8450 5650 8550 5650
-$Comp
-L Connector:Conn_01x01_Female J6
-U 1 1 5E2C8D90
-P 8750 5650
-F 0 "J6" H 8750 5900 50  0000 C CNN
-F 1 "Conn_01x01" H 8750 5800 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x01_P2.54mm_Vertical" H 8750 5650 50  0001 C CNN
-F 3 "~" H 8750 5650 50  0001 C CNN
-F 4 "Out" H 8750 5700 50  0000 C CNN "Field4"
-	1    8750 5650
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	1100 5900 1100 5850
 Wire Wire Line
@@ -1028,10 +963,10 @@ Connection ~ 1750 5450
 Wire Wire Line
 	1750 5450 1850 5450
 $Comp
-L Device:R_POT #RV2
+L Device:R_POT RV2
 U 1 1 5E659623
 P 3700 5100
-F 0 "#RV2" H 3631 5054 50  0000 R CNN
+F 0 "RV2" H 3631 5054 50  0000 R CNN
 F 1 "1Meg_log" H 3650 5250 50  0000 R CNN
 F 2 "1.Custom footprints:Alpha_16mm_potentiometer" H 3700 5100 50  0001 C CNN
 F 3 "~" H 3700 5100 50  0001 C CNN
@@ -1106,10 +1041,10 @@ F 3 "" H 2250 3000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_POT #RV5
+L Device:R_POT RV5
 U 1 1 5E6850E9
 P 7150 5550
-F 0 "#RV5" H 7100 5500 50  0000 R CNN
+F 0 "RV5" H 7100 5500 50  0000 R CNN
 F 1 "10k_log" H 7100 5700 50  0000 R CNN
 F 2 "1.Custom footprints:Alpha_16mm_potentiometer" H 7150 5550 50  0001 C CNN
 F 3 "~" H 7150 5550 50  0001 C CNN
@@ -1119,8 +1054,6 @@ F 4 "Volume" H 7100 5600 50  0000 R CNN "Field4"
 $EndComp
 Connection ~ 2250 5450
 Wire Wire Line
-	2250 3800 2250 4000
-Wire Wire Line
 	7150 5400 7150 5350
 Connection ~ 7150 5350
 Wire Wire Line
@@ -1128,10 +1061,10 @@ Wire Wire Line
 Wire Wire Line
 	6700 5800 7150 5800
 $Comp
-L Device:R_POT #RV4
+L Device:R_POT RV4
 U 1 1 5E6C96FE
 P 4300 3550
-F 0 "#RV4" V 4400 3650 50  0000 C CNN
+F 0 "RV4" V 4400 3650 50  0000 C CNN
 F 1 "100k_log" V 4100 3550 50  0000 C CNN
 F 2 "1.Custom footprints:Alpha_16mm_potentiometer" H 4300 3550 50  0001 C CNN
 F 3 "~" H 4300 3550 50  0001 C CNN
@@ -1140,10 +1073,10 @@ F 4 "Attack" V 4200 3550 50  0000 C CNN "Field4"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R_POT #RV3
+L Device:R_POT RV3
 U 1 1 5E6CA0A0
 P 4350 3050
-F 0 "#RV3" V 4450 3150 50  0000 C CNN
+F 0 "RV3" V 4450 3150 50  0000 C CNN
 F 1 "1Meg_lin" V 4150 3050 50  0000 C CNN
 F 2 "1.Custom footprints:Alpha_16mm_potentiometer" H 4350 3050 50  0001 C CNN
 F 3 "~" H 4350 3050 50  0001 C CNN
@@ -1154,8 +1087,6 @@ $EndComp
 Wire Wire Line
 	3300 3050 3200 3050
 Connection ~ 3200 3050
-Wire Wire Line
-	3700 3050 3600 3050
 Wire Wire Line
 	4500 3050 4550 3050
 Wire Wire Line
@@ -1174,10 +1105,10 @@ Connection ~ 4550 3350
 Wire Wire Line
 	4550 3350 4550 3550
 $Comp
-L Device:R_POT #RV1
+L Device:R_POT RV1
 U 1 1 5E70AF1F
 P 2250 3650
-F 0 "#RV1" H 2200 3600 50  0000 R CNN
+F 0 "RV1" H 2200 3600 50  0000 R CNN
 F 1 "1Meg_lin" H 2200 3800 50  0000 R CNN
 F 2 "1.Custom footprints:Alpha_16mm_potentiometer" H 2250 3650 50  0001 C CNN
 F 3 "~" H 2250 3650 50  0001 C CNN
@@ -1303,22 +1234,6 @@ Connection ~ 1150 1050
 Wire Wire Line
 	1150 1050 1200 1050
 $Comp
-L power:PWR_FLAG #FLG0102
-U 1 1 5EA3E4A4
-P 1150 1600
-F 0 "#FLG0102" H 1150 1675 50  0001 C CNN
-F 1 "PWR_FLAG" H 1150 1773 50  0000 C CNN
-F 2 "" H 1150 1600 50  0001 C CNN
-F 3 "~" H 1150 1600 50  0001 C CNN
-	1    1150 1600
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1150 1600 1150 1800
-Connection ~ 1150 1800
-Wire Wire Line
-	1150 1800 1150 1850
-$Comp
 L power:PWR_FLAG #FLG0103
 U 1 1 5EA49450
 P 1650 800
@@ -1330,89 +1245,10 @@ F 3 "~" H 1650 800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 4550 3050
-$Comp
-L Connector:Conn_01x01_Female J5
-U 1 1 5EA6EB23
-P 3700 2750
-F 0 "J5" V 3800 2700 50  0000 R CNN
-F 1 "Conn_01x01" V 3700 2700 50  0000 R CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x01_P2.54mm_Vertical" H 3700 2750 50  0001 C CNN
-F 3 "~" H 3700 2750 50  0001 C CNN
-F 4 "REL_1" V 3600 2700 50  0000 R CNN "Field4"
-	1    3700 2750
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	3700 2950 3700 3050
-Connection ~ 3700 3050
-Wire Wire Line
-	2500 3650 2450 3650
 Wire Wire Line
 	3600 3550 3650 3550
-$Comp
-L Connector:Conn_01x01_Female J7
-U 1 1 5EABB41C
-P 4050 3250
-F 0 "J7" V 4150 3300 50  0000 L CNN
-F 1 "Conn_01x01" V 4050 3300 50  0000 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x01_P2.54mm_Vertical" H 4050 3250 50  0001 C CNN
-F 3 "~" H 4050 3250 50  0001 C CNN
-F 4 "ATT_1" V 3950 3300 50  0000 L CNN "Field4"
-	1    4050 3250
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	4050 3450 4050 3550
-Wire Wire Line
-	4050 3550 3950 3550
-Wire Wire Line
-	4050 3550 4150 3550
-Connection ~ 4050 3550
-Wire Wire Line
-	3700 3050 4200 3050
-$Comp
-L Connector:Conn_01x01_Female J8
-U 1 1 5EAF52F4
-P 4550 2600
-F 0 "J8" V 4650 2550 50  0000 R CNN
-F 1 "Conn_01x01" V 4550 2550 50  0000 R CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x01_P2.54mm_Vertical" H 4550 2600 50  0001 C CNN
-F 3 "~" H 4550 2600 50  0001 C CNN
-F 4 "REL_23_&_ATT_23" V 4450 2550 50  0000 R CNN "Field4"
-	1    4550 2600
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	4550 2800 4550 2850
-Connection ~ 4550 2850
-$Comp
-L Connector:Conn_01x01_Female J9
-U 1 1 5EB07718
-P 3750 4750
-F 0 "J9" V 3850 4700 50  0000 R CNN
-F 1 "Conn_01x01" V 3750 4700 50  0000 R CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x01_P2.54mm_Vertical" H 3750 4750 50  0001 C CNN
-F 3 "~" H 3750 4750 50  0001 C CNN
-F 4 "RAT_1" V 3650 4700 50  0000 R CNN "Field4"
-	1    3750 4750
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Connector:Conn_01x01_Female J10
-U 1 1 5EB08397
-P 3700 5600
-F 0 "J10" V 3750 5600 50  0000 C CNN
-F 1 "Conn_01x01" V 3850 5600 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x01_P2.54mm_Vertical" H 3700 5600 50  0001 C CNN
-F 3 "~" H 3700 5600 50  0001 C CNN
-F 4 "RAT_23_&_VOL_3" V 3950 5600 50  0000 C CNN "Field4"
-	1    3700 5600
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	3300 5350 3700 5350
-Wire Wire Line
-	3800 4950 3750 4950
 Wire Wire Line
 	4100 4950 4100 4850
 Connection ~ 4100 4850
@@ -1431,114 +1267,7 @@ Wire Wire Line
 Wire Wire Line
 	3300 4850 4100 4850
 Wire Wire Line
-	3700 5400 3700 5350
-Wire Wire Line
-	7300 5550 7400 5550
-Wire Wire Line
 	7150 5700 7150 5800
-$Comp
-L Connector:Conn_01x01_Female J2
-U 1 1 5EC0BB6B
-P 7150 6050
-F 0 "J2" V 7200 6050 50  0000 C CNN
-F 1 "Conn_01x01" V 7300 6050 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x01_P2.54mm_Vertical" H 7150 6050 50  0001 C CNN
-F 3 "~" H 7150 6050 50  0001 C CNN
-F 4 "VOL_1_&_TR_SW_2" V 7400 6050 50  0000 C CNN "Field4"
-	1    7150 6050
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	7150 5850 7150 5800
-Connection ~ 7150 5800
-$Comp
-L Connector:Conn_01x01_Female J11
-U 1 1 5EC16D28
-P 7400 5800
-F 0 "J11" V 7450 5800 50  0000 C CNN
-F 1 "Conn_01x01" V 7550 5800 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x01_P2.54mm_Vertical" H 7400 5800 50  0001 C CNN
-F 3 "~" H 7400 5800 50  0001 C CNN
-F 4 "VOL_2" V 7650 5800 50  0000 C CNN "Field4"
-	1    7400 5800
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	7400 5600 7400 5550
-Connection ~ 7400 5550
-Wire Wire Line
-	7400 5550 7450 5550
-Connection ~ 3750 4950
-Wire Wire Line
-	3750 4950 3700 4950
-$Comp
-L Connector:Conn_01x01_Female J12
-U 1 1 5EB94D63
-P 5450 4100
-F 0 "J12" V 5550 4050 50  0000 R CNN
-F 1 "Conn_01x01" V 5450 4050 50  0000 R CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x01_P2.54mm_Vertical" H 5450 4100 50  0001 C CNN
-F 3 "~" H 5450 4100 50  0001 C CNN
-F 4 "TRB_SW_1" V 5350 4050 50  0000 R CNN "Field4"
-	1    5450 4100
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	5450 4300 5450 4350
-Connection ~ 5450 4350
-Wire Wire Line
-	5450 4350 5500 4350
-$Comp
-L Connector:Conn_01x01_Female J13
-U 1 1 5EAE4D74
-P 1950 3450
-F 0 "J13" H 1950 3350 50  0000 L CNN
-F 1 "Conn_01x01" H 1950 3450 50  0000 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x01_P2.54mm_Vertical" H 1950 3450 50  0001 C CNN
-F 3 "~" H 1950 3450 50  0001 C CNN
-F 4 "TH_1" H 1950 3550 50  0000 L CNN "Field4"
-	1    1950 3450
-	-1   0    0    1   
-$EndComp
-$Comp
-L Connector:Conn_01x01_Female J14
-U 1 1 5EAE8B09
-P 1950 4000
-F 0 "J14" H 1950 3900 50  0000 L CNN
-F 1 "Conn_01x01" H 1950 4000 50  0000 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x01_P2.54mm_Vertical" H 1950 4000 50  0001 C CNN
-F 3 "~" H 1950 4000 50  0001 C CNN
-F 4 "TH_3" H 1950 4100 50  0000 L CNN "Field4"
-	1    1950 4000
-	-1   0    0    1   
-$EndComp
-$Comp
-L Connector:Conn_01x01_Female J15
-U 1 1 5EAE96BE
-P 2450 3900
-F 0 "J15" H 2450 3800 50  0000 L CNN
-F 1 "Conn_01x01" H 2450 3900 50  0000 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x01_P2.54mm_Vertical" H 2450 3900 50  0001 C CNN
-F 3 "~" H 2450 3900 50  0001 C CNN
-F 4 "TH_1" H 2450 4000 50  0000 L CNN "Field4"
-	1    2450 3900
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	2450 3700 2450 3650
-Connection ~ 2450 3650
-Wire Wire Line
-	2450 3650 2400 3650
-Wire Wire Line
-	2150 3450 2250 3450
-Connection ~ 2250 3450
-Wire Wire Line
-	2250 3450 2250 3500
-Wire Wire Line
-	2150 4000 2250 4000
-Connection ~ 2250 4000
-Wire Wire Line
-	2250 4000 2250 5450
 $Comp
 L Device:D D6
 U 1 1 5EB37F0B
@@ -1602,4 +1331,63 @@ Wire Wire Line
 	1950 1050 2150 1050
 Wire Wire Line
 	2150 1050 2750 1050
+Wire Wire Line
+	2250 3400 2250 3500
+Wire Wire Line
+	2400 3650 2500 3650
+Wire Wire Line
+	2250 3800 2250 5450
+Wire Wire Line
+	3600 3050 4200 3050
+Wire Wire Line
+	3950 3550 4150 3550
+Wire Wire Line
+	3700 4950 3800 4950
+Wire Wire Line
+	7300 5550 7450 5550
+Wire Wire Line
+	5400 4350 5500 4350
+$Comp
+L Connector:Conn_01x04_Female J1
+U 1 1 5EB5C218
+P 950 4900
+F 0 "J1" H 842 4385 50  0000 C CNN
+F 1 "Conn_01x04_Female" H 842 4476 50  0000 C CNN
+F 2 "1.Custom footprints:Molex_KK-254_01x04_P2.54mm_Right_Angle" H 950 4900 50  0001 C CNN
+F 3 "~" H 950 4900 50  0001 C CNN
+F 4 "Molex KK" H 842 4567 50  0000 C CNN "Field4"
+	1    950  4900
+	-1   0    0    1   
+$EndComp
+Text GLabel 1000 5450 0    50   Input ~ 0
+Input
+Text GLabel 8550 5650 2    50   Input ~ 0
+Output
+Text GLabel 1100 1050 0    50   Input ~ 0
+Vin
+Text GLabel 1300 5000 2    50   Input ~ 0
+Output
+Text GLabel 1300 4700 2    50   Input ~ 0
+Input
+$Comp
+L power:GND #PWR0102
+U 1 1 5EB6FE9C
+P 1300 4800
+F 0 "#PWR0102" H 1300 4550 50  0001 C CNN
+F 1 "GND" V 1300 4600 50  0000 C CNN
+F 2 "" H 1300 4800 50  0001 C CNN
+F 3 "" H 1300 4800 50  0001 C CNN
+	1    1300 4800
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1150 4700 1300 4700
+Wire Wire Line
+	1300 4800 1150 4800
+Wire Wire Line
+	1150 4900 1300 4900
+Wire Wire Line
+	1300 5000 1150 5000
+Text GLabel 1300 4900 2    50   Input ~ 0
+Vin
 $EndSCHEMATC
